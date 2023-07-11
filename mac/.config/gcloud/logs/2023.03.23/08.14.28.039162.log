@@ -1,0 +1,93 @@
+2023-03-23 08:14:28,052 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2023-03-23 08:14:28,249 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2023-03-23 08:14:28,254 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--zone: "europe-west1-b", [USER@]INSTANCE: "gke-gke-px-default-pool-fc6d602e-t1gs"]
+2023-03-23 08:14:28,369 WARNING  root            The private SSH key file for gcloud does not exist.
+2023-03-23 08:14:28,369 WARNING  root            The public SSH key file for gcloud does not exist.
+2023-03-23 08:14:28,369 WARNING  root            You do not have an SSH key for gcloud.
+2023-03-23 08:14:28,369 WARNING  root            SSH keygen will be executed to generate a key.
+2023-03-23 08:14:28,369 DEBUG    root            Running command [/usr/bin/ssh-keygen -t rsa -f /Users/hmasood/.ssh/google_compute_engine].
+2023-03-23 08:14:28,369 DEBUG    root            Executing command: ['/usr/bin/ssh-keygen', '-t', 'rsa', '-f', '/Users/hmasood/.ssh/google_compute_engine']
+2023-03-23 08:15:03,690 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-23 08:15:03,920 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-23 08:15:03,967 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-23 08:15:04,308 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-23 08:15:04,318 DEBUG    root            OS Login Enabled: False
+2FA Enabled: False
+Security Keys Enabled: False
+Username: hmasood
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2023-03-23 08:15:04,318 DEBUG    root            SSH Known Hosts File [/Users/hmasood/.ssh/google_compute_known_hosts] could not be opened: Unable to read file [/Users/hmasood/.ssh/google_compute_known_hosts]: [Errno 2] No such file or directory: '/Users/hmasood/.ssh/google_compute_known_hosts'
+2023-03-23 08:15:04,318 DEBUG    root            Current SSH keys in project: []
+2023-03-23 08:15:04,319 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2023-03-23 08:15:04,324 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-23 08:15:05,022 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-23 08:15:05,025 DEBUG    root            Operations to inspect: [<Operation
+ id: 8985220535830033511
+ insertTime: '2023-03-23T01:15:04.763-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1679559304430-5f78cdfb84268-ee970e57-53e91548'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/pwx-cnbu-cx-support/global/operations/operation-1679559304430-5f78cdfb84268-ee970e57-53e91548'
+ startTime: '2023-03-23T01:15:04.773-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 618150241188
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/pwx-cnbu-cx-support'
+ user: 'hmasood@purestorage.com'
+ warnings: []>]
+2023-03-23 08:15:05,028 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-23 08:15:15,610 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-23 08:15:15,616 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2023-03-23T01:15:15.325-07:00'
+ id: 8985220535830033511
+ insertTime: '2023-03-23T01:15:04.763-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1679559304430-5f78cdfb84268-ee970e57-53e91548'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/pwx-cnbu-cx-support/global/operations/operation-1679559304430-5f78cdfb84268-ee970e57-53e91548'
+ startTime: '2023-03-23T01:15:04.773-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 618150241188
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/pwx-cnbu-cx-support'
+ user: 'hmasood@purestorage.com'
+ warnings: []>]
+2023-03-23 08:15:15,617 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/pwx-cnbu-cx-support].
+
+2023-03-23 08:15:15,624 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-23 08:15:15,991 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-23 08:15:16,146 INFO     ___FILE_ONLY___ Waiting for SSH key to propagate.
+
+2023-03-23 08:15:16,148 DEBUG    root            Running command [/usr/bin/ssh -T -i /Users/hmasood/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.6890255992738977397 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/hmasood/.ssh/google_compute_known_hosts hmasood@35.241.154.54 -- :].
+2023-03-23 08:15:16,148 DEBUG    root            Executing command: ['/usr/bin/ssh', '-T', '-i', '/Users/hmasood/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.6890255992738977397', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/Users/hmasood/.ssh/google_compute_known_hosts', 'hmasood@35.241.154.54', '--', ':']
+2023-03-23 08:15:28,728 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/hmasood/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.6890255992738977397 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/hmasood/.ssh/google_compute_known_hosts hmasood@35.241.154.54].
+2023-03-23 08:15:28,729 DEBUG    root            Executing command: ['/usr/bin/ssh', '-t', '-i', '/Users/hmasood/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.6890255992738977397', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/Users/hmasood/.ssh/google_compute_known_hosts', 'hmasood@35.241.154.54']
+2023-03-23 08:20:03,088 INFO     ___FILE_ONLY___ 
+Recommendation: To check for possible causes of SSH connectivity issues and get
+recommendations, rerun the ssh command with the --troubleshoot option.
+
+gcloud compute ssh gke-gke-px-default-pool-fc6d602e-t1gs --project=pwx-cnbu-cx-support --zone=europe-west1-b --troubleshoot
+
+Or, to investigate an IAP tunneling issue:
+
+gcloud compute ssh gke-gke-px-default-pool-fc6d602e-t1gs --project=pwx-cnbu-cx-support --zone=europe-west1-b --troubleshoot --tunnel-through-iap
+
+
+2023-03-23 08:20:03,089 DEBUG    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/ssh.py", line 431, in Run
+    raise e
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/ssh.py", line 424, in Run
+    return_code = cmd.Run(
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/ssh/ssh.py", line 1557, in Run
+    raise CommandError(args[0], return_code=status)
+googlecloudsdk.command_lib.util.ssh.ssh.CommandError: [/usr/bin/ssh] exited with return code [255].
+2023-03-23 08:20:03,122 ERROR    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

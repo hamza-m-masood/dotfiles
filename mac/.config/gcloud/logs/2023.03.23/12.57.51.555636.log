@@ -1,0 +1,7 @@
+2023-03-23 12:57:51,556 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-03-23 12:57:51,559 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
+2023-03-23 12:57:51,560 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "account"]
+2023-03-23 12:57:51,560 DEBUG    root            Chosen display Format:value(.)
+2023-03-23 12:57:51,560 INFO     root            Display format: "value(.)"
+2023-03-23 12:57:51,561 INFO     ___FILE_ONLY___ hmasood@purestorage.com
+

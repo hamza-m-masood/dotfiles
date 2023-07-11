@@ -1,0 +1,36 @@
+2023-03-24 14:54:02,125 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-03-24 14:54:02,127 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-03-24 14:54:02,127 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-03-24 14:54:02,150 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-03-24 14:54:02,180 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-03-24 14:54:02,284 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-03-24 14:54:02,305 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.gstatic.com:443
+2023-03-24 14:54:02,374 DEBUG    urllib3.connectionpool https://www.gstatic.com:443 "GET /cloudsdk/feature_flag_config_file.yaml HTTP/1.1" 200 101
+2023-03-24 14:54:02,381 DEBUG    root            Chosen display Format:default json
+2023-03-24 14:54:02,381 INFO     root            Display format: "default json"
+2023-03-24 14:54:02,382 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "compute": {
+        "region": "europe-west4",
+        "zone": "europe-west4-b"
+      },
+      "core": {
+        "account": "hmasood@purestorage.com",
+        "disable_usage_reporting": "True",
+        "project": "pwx-cnbu-cx-support"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0Ael9sCOv3fB3QBA-ayiF-e6xz932u5fA11nnBfp7fdXc9Ji6cw8oRJ1CMEe953xKzz_mCJISI2-T34AzXVnntUPK9Q2dWQ9_6vm2hKEdC9wcD1Q29zpwih_Um6h7_rtC87Hn1TcZBFqWnjUNS6vjHsjnOWrBuqYuhXsihwaCgYKAZQSARMSFQF4udJhGhqX6AHE0aV2lwZwiZZppQ0173",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk4NmVlOWEzYjc1MjBiNDk0ZGY1NGZlMzJlM2U1YzRjYTY4NWM4OWQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NDg5OTgyNzc0MTQ3NTc1NzQ4IiwiaGQiOiJwdXJlc3RvcmFnZS5jb20iLCJlbWFpbCI6ImhtYXNvb2RAcHVyZXN0b3JhZ2UuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJVblQ2aDRMTktQTHdMUW5ENnY5b2ZnIiwiaWF0IjoxNjc5NjY5NjQyLCJleHAiOjE2Nzk2NzMyNDJ9.bjJzsfGNfgYDLrAVUDng1yhFi8LMbh24tltxzJIpWH_p3fHSgXxlrdWQ_HK71QtfzO7WXKV4B7WkS5k7hPFRu7Vkxfto6UK9n0Xrjvk40cstJGBj0ZMRg_uFtd9RPpalYyK8hHodn3Ur5Ke6i3t8MF7ZNzZSKOgUQN4O5ahc6wnYcTS6bAy4LeIznwLRUgPu0I2Xe86VDvltx8xNQ2sszQ5HTWo8KRb_UsaW09TDlmwUM7ZV0oKL4hPWVI655vQEpFAVhy7pWeUxLYJiseLx1qujFg3-AS3o_i5w5-2h2fxfyPCXX3zRmNaIFt7WA0_Ajm4LKaTPoQZX_KWpCPV2Xg",
+    "token_expiry": "2023-03-24T15:54:01Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/hmasood/.config/gcloud/config_sentinel"
+  }
+}
+2023-03-24 14:54:02,382 INFO     ___FILE_ONLY___ 
+

@@ -1,0 +1,8 @@
+[core]
+account = hmasood@purestorage.com
+project = pwx-cnbu-cx-support
+
+[compute]
+zone = europe-west4-b
+region = europe-west4
+

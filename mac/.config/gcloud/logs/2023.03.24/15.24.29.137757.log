@@ -1,0 +1,9 @@
+2023-03-24 15:24:29,139 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'node_pools']
+2023-03-24 15:24:29,142 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'node-pools', 'create']
+2023-03-24 15:24:29,145 ERROR    root            (gcloud.container.node-pools.create) unrecognized arguments:
+  --network
+  default
+  --addons
+  HorizontalPodAutoscaling,HttpLoadBalancing
+  To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS

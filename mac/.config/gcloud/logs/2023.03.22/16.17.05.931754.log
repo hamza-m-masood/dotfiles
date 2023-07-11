@@ -1,0 +1,12 @@
+2023-03-22 16:17:05,933 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-03-22 16:17:05,934 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2023-03-22 16:17:05,949 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--zone: "europe-west1-b", NAME: "gke-px"]
+2023-03-22 16:17:05,954 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2023-03-22 16:17:05,960 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 16:17:07,145 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/clusters/gke-px?alt=json HTTP/1.1" 200 None
+2023-03-22 16:17:07,215 DEBUG    root            Saved kubeconfig to /Users/hmasood/.kube/config-files/azuer.yaml
+2023-03-22 16:17:07,216 INFO     ___FILE_ONLY___ kubeconfig entry generated for gke-px.
+
+2023-03-22 16:17:07,216 DEBUG    root            Chosen display Format:default
+2023-03-22 16:17:07,217 INFO     root            Display format: "default"

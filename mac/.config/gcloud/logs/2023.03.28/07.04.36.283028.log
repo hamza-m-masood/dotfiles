@@ -1,0 +1,32 @@
+2023-03-28 07:04:36,297 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2023-03-28 07:04:36,315 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2023-03-28 07:04:36,317 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--zone: "europe-west1-b", [USER@]INSTANCE: "gke-gke-px-default-pool-26154d84-kjwp"]
+2023-03-28 07:04:36,359 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-03-28 07:04:36,370 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-03-28 07:04:37,573 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-03-28 07:04:37,706 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-28 07:04:39,011 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-28 07:04:39,017 DEBUG    root            Chosen display Format:list[title="Could not fetch resource:",always-display-title]
+2023-03-28 07:04:39,018 DEBUG    root            (gcloud.compute.ssh) Could not fetch resource:
+ - The resource 'projects/pwx-cnbu-cx-support/zones/europe-west1-b/instances/gke-gke-px-default-pool-26154d84-kjwp' was not found
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/ssh.py", line 286, in Run
+    instance = ssh_helper.GetInstance(client, instance_ref)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/compute/ssh_utils.py", line 530, in GetInstance
+    return client.MakeRequests([request])[0]
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 143, in MakeRequests
+    utils.RaiseToolException(
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 139, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 148, in RaiseException
+    raise exception(
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The resource 'projects/pwx-cnbu-cx-support/zones/europe-west1-b/instances/gke-gke-px-default-pool-26154d84-kjwp' was not found
+
+2023-03-28 07:04:39,045 ERROR    root            (gcloud.compute.ssh) Could not fetch resource:
+ - The resource 'projects/pwx-cnbu-cx-support/zones/europe-west1-b/instances/gke-gke-px-default-pool-26154d84-kjwp' was not found
+

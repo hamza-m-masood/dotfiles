@@ -1,0 +1,182 @@
+2023-03-23 08:12:32,585 DEBUG    root            Loaded Command Group: ['gcloud', 'help']
+2023-03-23 08:12:32,586 DEBUG    root            Running [gcloud.help] with arguments: []
+2023-03-23 08:12:33,738 DEBUG    root            Chosen display Format:
+        table[all-box,pager](
+            commandpath():label='COMMAND',
+            summary():wrap)
+        :(relevance:sort=1:reverse)
+2023-03-23 08:12:33,739 INFO     root            Display format: "
+        table[all-box,pager](
+            commandpath():label='COMMAND',
+            summary():wrap)
+        :(relevance:sort=1:reverse)"
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ │                   COMMAND                   │                                                    SUMMARY                                                     │
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ gcloud dataproc clusters GKE               
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,747 INFO     ___FILE_ONLY___ Create Dataproc GKE-based virtual clusters.                                                                   
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ [m                                                                                                              
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ gcloud alpha builds deploy configure GKE   
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ [1m(ALPHA)[m Configure automated build and deployment to a target Google Kubernetes Engine cluster.                
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,748 INFO     ___FILE_ONLY___ [m                                                                                                              
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ gcloud alpha builds deploy GKE             
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ [1m(ALPHA)[m Build and deploy to a target Google Kubernetes Engine cluster.                                        
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ [m                                                                                                              
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ gcloud container fleet cloudrun apply      
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ Deploy or update the CloudRun feature.                                                                        
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,749 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ [m[1mFLAGS[m[m                                                                                                         
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ [1m--GKE-cluster[m                                                                                                 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ [1mThe location/name of the GKE cluster. The location can be a zone or a region for e.g [1mus-central1-a/my-cluster[m.
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ [m                                                                                                              
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,750 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ gcloud container fleet memberships register
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ Register a cluster with a fleet.                                                                              
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ [m[1mFLAGS[m[m                                                                                                         
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ [1m--GKE-cluster[m                                                                                                 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___ [1mThe location/name of the GKE cluster. The location can be a zone or a region for e.g [1mus-central1-a/my-cluster[m.
+2023-03-23 08:12:33,751 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___                                            
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ │ 
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ [m                                                                                                              
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___  
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ │
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ └─────────────────────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ 
+
+2023-03-23 08:12:33,752 INFO     ___FILE_ONLY___ Listed 5 of 232 items.
+

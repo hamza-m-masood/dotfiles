@@ -1,0 +1,49 @@
+2023-03-22 16:02:25,858 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-03-22 16:02:25,861 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2023-03-22 16:02:25,871 WARNING  root            Legacy Logging and Monitoring is deprecated. Thus, flag `--enable-cloud-logging` is also deprecated and will be removed in an upcoming release. Please use `--logging` (optionally with `--monitoring`). For more details, please read: https://cloud.google.com/stackdriver/docs/solutions/gke/installing.
+2023-03-22 16:02:25,871 WARNING  root            Legacy Logging and Monitoring is deprecated. Thus, flag `--enable-cloud-monitoring` is also deprecated. Please use `--monitoring` (optionally with `--logging`). For more details, please read: https://cloud.google.com/stackdriver/docs/solutions/gke/installing.
+2023-03-22 16:02:25,883 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--addons: "['HorizontalPodAutoscaling', 'HttpLoadBalancing', 'KubernetesDashboard']", --disk-size: "53687091200", --disk-type: "pd-ssd", --enable-cloud-logging: "True", --enable-cloud-monitoring: "True", --image-type: "ubuntu_containerd", --machine-type: "n1-standard-4", --network: "default", --num-nodes: "3", --scopes: "['https://www.googleapis.com/auth/compute', 'https://www.googleapis.com/auth/devstorage.read_only', 'https://www.googleapis.com/auth/logging.write', 'https://www.googleapis.com/auth/monitoring', 'https://www.googleapis.com/auth/servicecontrol', 'https://www.googleapis.com/auth/service.management.readonly', 'https://www.googleapis.com/auth/trace.append']", --username: "admin", --zone: "europe-west1-b", NAME: "gke-px"]
+2023-03-22 16:02:25,890 INFO     ___FILE_ONLY___ Default change: VPC-native is the default mode during cluster creation for versions greater than 1.21.0-gke.1500. To create advanced routes based clusters, please pass the `--no-enable-ip-alias` flag
+
+2023-03-22 16:02:25,890 INFO     ___FILE_ONLY___ Note: Modifications on the boot disks of node VMs do not persist across node recreations. Nodes are recreated during manual-upgrade, auto-upgrade, auto-repair, and auto-scaling. To preserve modifications across node recreation, use a DaemonSet.
+
+2023-03-22 16:02:25,890 INFO     ___FILE_ONLY___ Default change: During creation of nodepools or autoscaling configuration changes for cluster versions greater than 1.24.1-gke.800 a default location policy is applied. For Spot and PVM it defaults to ANY, and for all other VM kinds a BALANCED policy is used. To change the default values use the `--location-policy` flag.
+
+2023-03-22 16:02:25,890 INFO     ___FILE_ONLY___ Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).
+
+2023-03-22 16:02:25,896 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 16:02:29,639 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/clusters?alt=json HTTP/1.1" 400 None
+2023-03-22 16:02:29,644 DEBUG    root            (gcloud.container.clusters.create) ResponseError: code=400, message=`KubernetesDashboard` isn't supported as a managed addon as of cluster version 1.15.0. We recommend using console.cloud.google.com to monitor your clusters. If you still want to run the kubernetes dashboard, follow the instructions here to install it in the cluster yourself: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/.
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1178, in Run
+    operation_ref = adapter.CreateCluster(cluster_ref, options)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 2485, in CreateCluster
+    operation = self.client.projects_locations_clusters.Create(req)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/container/v1/container_v1_client.py", line 493, in Create
+    return self._RunMethod(
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://container.googleapis.com/v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/clusters?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Wed, 22 Mar 2023 16:02:29 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "`KubernetesDashboard` isn't supported as a managed addon as of cluster version 1.15.0. We recommend using console.cloud.google.com to monitor your clusters. If you still want to run the kubernetes dashboard, follow the instructions here to install it in the cluster yourself: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1189, in Run
+    raise exceptions.HttpException(error, util.HTTP_ERROR_FORMAT)
+googlecloudsdk.calliope.exceptions.HttpException: ResponseError: code=400, message=`KubernetesDashboard` isn't supported as a managed addon as of cluster version 1.15.0. We recommend using console.cloud.google.com to monitor your clusters. If you still want to run the kubernetes dashboard, follow the instructions here to install it in the cluster yourself: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/.
+2023-03-22 16:02:29,662 ERROR    root            (gcloud.container.clusters.create) ResponseError: code=400, message=`KubernetesDashboard` isn't supported as a managed addon as of cluster version 1.15.0. We recommend using console.cloud.google.com to monitor your clusters. If you still want to run the kubernetes dashboard, follow the instructions here to install it in the cluster yourself: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/.

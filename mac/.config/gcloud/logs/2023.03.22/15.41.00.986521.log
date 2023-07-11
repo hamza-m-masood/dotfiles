@@ -1,0 +1,8 @@
+2023-03-22 15:41:00,988 DEBUG    root            Loaded Command Group: ['gcloud', 'info']
+2023-03-22 15:41:00,989 DEBUG    root            Running [gcloud.info] with arguments: [--format: "value(config.account)"]
+2023-03-22 15:41:01,012 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.gstatic.com:443
+2023-03-22 15:41:02,138 DEBUG    urllib3.connectionpool https://www.gstatic.com:443 "GET /cloudsdk/feature_flag_config_file.yaml HTTP/1.1" 200 101
+2023-03-22 15:41:02,164 DEBUG    root            Chosen display Format:value(config.account)
+2023-03-22 15:41:02,166 INFO     root            Display format: "value(config.account)"
+2023-03-22 15:41:02,168 INFO     ___FILE_ONLY___ hmasood@purestorage.com
+

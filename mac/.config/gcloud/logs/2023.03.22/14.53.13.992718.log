@@ -1,0 +1,197 @@
+2023-03-22 14:53:13,994 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-03-22 14:53:14,018 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2023-03-22 14:53:14,045 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--node-locations: "['europe-west1-b']", --release-channel: "regular", --zone: "europe-west1-b", NAME: "hamza-gke-cluster"]
+2023-03-22 14:53:14,051 INFO     ___FILE_ONLY___ Default change: VPC-native is the default mode during cluster creation for versions greater than 1.21.0-gke.1500. To create advanced routes based clusters, please pass the `--no-enable-ip-alias` flag
+
+2023-03-22 14:53:14,051 INFO     ___FILE_ONLY___ Default change: During creation of nodepools or autoscaling configuration changes for cluster versions greater than 1.24.1-gke.800 a default location policy is applied. For Spot and PVM it defaults to ANY, and for all other VM kinds a BALANCED policy is used. To change the default values use the `--location-policy` flag.
+
+2023-03-22 14:53:14,051 INFO     ___FILE_ONLY___ Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).
+
+2023-03-22 14:53:14,065 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:18,982 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/clusters?alt=json HTTP/1.1" 200 None
+2023-03-22 14:53:18,988 INFO     ___FILE_ONLY___ Creating cluster hamza-gke-cluster in europe-west1-b...
+2023-03-22 14:53:18,993 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:20,190 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:53:25,207 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:26,411 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:53:31,428 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:32,587 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:53:37,607 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:38,795 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:53:43,815 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:44,995 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:53:50,014 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:51,192 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:53:56,207 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:53:57,384 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:02,398 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:03,586 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:08,608 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:09,791 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:14,808 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:16,018 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:21,036 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:22,220 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:27,237 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:28,404 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:33,417 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:34,617 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:39,638 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:40,806 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:45,828 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:47,001 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:52,015 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:54:54,328 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:54:59,349 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:00,552 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:05,569 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:06,770 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:11,788 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:12,961 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:17,981 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:19,157 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:24,179 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:25,377 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:30,398 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:31,574 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:36,596 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:37,788 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:42,808 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:44,005 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:49,021 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:50,188 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:55:55,205 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:55:56,386 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:01,407 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:02,577 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:07,593 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:08,776 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:13,800 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:14,993 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:20,006 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:21,182 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:26,196 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:27,372 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:32,387 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:33,543 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:38,555 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:39,733 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:44,751 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:45,962 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:50,983 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:52,192 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:56:57,214 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:56:58,381 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:03,399 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:04,569 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:09,587 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:10,742 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:15,761 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:16,922 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:21,938 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:23,135 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:28,158 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:29,333 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:34,354 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:35,526 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:40,549 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:41,719 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:46,739 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:47,920 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:52,944 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:57:54,112 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:57:59,135 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:58:00,297 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/operations/operation-1679496798909-47bda7b6?alt=json HTTP/1.1" 200 None
+2023-03-22 14:58:00,305 INFO     root            Operation <Operation
+ clusterConditions: []
+ endTime: '2023-03-22T14:57:59.490985596Z'
+ name: 'operation-1679496798909-47bda7b6'
+ nodepoolConditions: []
+ operationType: OperationTypeValueValuesEnum(CREATE_CLUSTER, 1)
+ progress: <OperationProgress
+ metrics: [<Metric
+ intValue: 9
+ name: 'CLUSTER_CONFIGURING'>, <Metric
+ intValue: 9
+ name: 'CLUSTER_CONFIGURING_TOTAL'>, <Metric
+ intValue: 12
+ name: 'CLUSTER_DEPLOYING'>, <Metric
+ intValue: 12
+ name: 'CLUSTER_DEPLOYING_TOTAL'>, <Metric
+ intValue: 1
+ name: 'CLUSTER_HEALTHCHECKING'>, <Metric
+ intValue: 2
+ name: 'CLUSTER_HEALTHCHECKING_TOTAL'>]
+ stages: []>
+ selfLink: 'https://container.googleapis.com/v1/projects/618150241188/zones/europe-west1-b/operations/operation-1679496798909-47bda7b6'
+ startTime: '2023-03-22T14:53:18.909171561Z'
+ status: StatusValueValuesEnum(DONE, 3)
+ targetLink: 'https://container.googleapis.com/v1/projects/618150241188/zones/europe-west1-b/clusters/hamza-gke-cluster'
+ zone: 'europe-west1-b'> succeeded after 281.317 seconds
+2023-03-22 14:58:00,439 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-22 14:58:01,627 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/clusters/hamza-gke-cluster?alt=json HTTP/1.1" 200 None
+2023-03-22 14:58:01,638 INFO     ___FILE_ONLY___ Created [https://container.googleapis.com/v1/projects/pwx-cnbu-cx-support/zones/europe-west1-b/clusters/hamza-gke-cluster].
+
+2023-03-22 14:58:01,638 INFO     ___FILE_ONLY___ To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/europe-west1-b/hamza-gke-cluster?project=pwx-cnbu-cx-support
+
+2023-03-22 14:58:01,690 DEBUG    root            Saved kubeconfig to /Users/hmasood/.kube/config-files/azuer.yaml
+2023-03-22 14:58:01,690 INFO     ___FILE_ONLY___ kubeconfig entry generated for hamza-gke-cluster.
+
+2023-03-22 14:58:01,690 DEBUG    root            Chosen display Format:
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+
+2023-03-22 14:58:01,691 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ NAME
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___                
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ LOCATION
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___         
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ MASTER_VERSION
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___    
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ MASTER_IP
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___      
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___   
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ NODE_VERSION
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___      
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ NUM_NODES
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___   
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ STATUS
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ 
+
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ hamza-gke-cluster
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___   
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ europe-west1-b
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___   
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ 1.24.9-gke.3200
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___   
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ 35.241.148.6
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___   
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ e2-medium
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___      
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___ 1.24.9-gke.3200
+2023-03-22 14:58:01,694 INFO     ___FILE_ONLY___   
+2023-03-22 14:58:01,695 INFO     ___FILE_ONLY___ 3
+2023-03-22 14:58:01,695 INFO     ___FILE_ONLY___           
+2023-03-22 14:58:01,695 INFO     ___FILE_ONLY___ RUNNING
+2023-03-22 14:58:01,695 INFO     ___FILE_ONLY___ 
+

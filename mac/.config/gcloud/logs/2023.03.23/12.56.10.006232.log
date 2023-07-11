@@ -1,0 +1,306 @@
+2023-03-23 12:56:10,024 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2023-03-23 12:56:10,025 DEBUG    root            Running [gcloud.compute] with arguments: [--help: "None"]
+2023-03-23 12:56:10,028 DEBUG    root            No implementation for release track [GA] for element: [/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/instance_settings]
+2023-03-23 12:56:10,032 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2023-03-23 12:56:10,054 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'copy_files']
+2023-03-23 12:56:10,058 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_http_proxies']
+2023-03-23 12:56:10,064 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'config_ssh']
+2023-03-23 12:56:10,068 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'network_firewall_policies']
+2023-03-23 12:56:10,072 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'machine_images']
+2023-03-23 12:56:10,082 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_tcp_proxies']
+2023-03-23 12:56:10,086 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'reservations']
+2023-03-23 12:56:10,090 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2023-03-23 12:56:10,106 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'reset_windows_password']
+2023-03-23 12:56:10,117 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssl_certificates']
+2023-03-23 12:56:10,122 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2023-03-23 12:56:10,145 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'security_policies']
+2023-03-23 12:56:10,149 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'operations']
+2023-03-23 12:56:10,151 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'backend_services']
+2023-03-23 12:56:10,155 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'public_delegated_prefixes']
+2023-03-23 12:56:10,158 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'snapshots']
+2023-03-23 12:56:10,161 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'os_login']
+2023-03-23 12:56:10,163 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'url_maps']
+2023-03-23 12:56:10,166 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'addresses']
+2023-03-23 12:56:10,168 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'network_endpoint_groups']
+2023-03-23 12:56:10,170 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'os_config']
+2023-03-23 12:56:10,175 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'machine_types']
+2023-03-23 12:56:10,178 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'routes']
+2023-03-23 12:56:10,180 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'vpn_tunnels']
+2023-03-23 12:56:10,183 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_pools']
+2023-03-23 12:56:10,187 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'connect_to_serial_port']
+2023-03-23 12:56:10,197 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'sign_url']
+2023-03-23 12:56:10,208 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'scp']
+2023-03-23 12:56:10,212 DEBUG    root            No implementation for release track [GA] for element: [/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/org_security_policies]
+2023-03-23 12:56:10,214 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_instances']
+2023-03-23 12:56:10,218 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'tpus']
+2023-03-23 12:56:10,224 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'backend_buckets']
+2023-03-23 12:56:10,228 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'public_advertised_prefixes']
+2023-03-23 12:56:10,234 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'external_vpn_gateways']
+2023-03-23 12:56:10,238 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'interconnects']
+2023-03-23 12:56:10,244 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'disks']
+2023-03-23 12:56:10,265 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'https_health_checks']
+2023-03-23 12:56:10,270 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'routers']
+2023-03-23 12:56:10,275 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_grpc_proxies']
+2023-03-23 12:56:10,280 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'vpn_gateways']
+2023-03-23 12:56:10,285 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'service_attachments']
+2023-03-23 12:56:10,288 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_ssl_proxies']
+2023-03-23 12:56:10,292 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'network_attachments']
+2023-03-23 12:56:10,297 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'accelerator_types']
+2023-03-23 12:56:10,300 DEBUG    root            No implementation for release track [GA] for element: [/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/future_reservations]
+2023-03-23 12:56:10,302 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2023-03-23 12:56:10,305 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2023-03-23 12:56:10,322 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2023-03-23 12:56:10,329 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_policies']
+2023-03-23 12:56:10,334 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones']
+2023-03-23 12:56:10,339 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'disk_types']
+2023-03-23 12:56:10,350 DEBUG    root            No implementation for release track [GA] for element: [/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/queued_resources]
+2023-03-23 12:56:10,354 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'packet_mirrorings']
+2023-03-23 12:56:10,358 DEBUG    root            No implementation for release track [GA] for element: [/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/instant_snapshots]
+2023-03-23 12:56:10,368 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'diagnose']
+2023-03-23 12:56:10,372 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2023-03-23 12:56:10,377 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions']
+2023-03-23 12:56:10,388 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'start_iap_tunnel']
+2023-03-23 12:56:10,393 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'health_checks']
+2023-03-23 12:56:10,397 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'network_edge_security_services']
+2023-03-23 12:56:10,401 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssl_policies']
+2023-03-23 12:56:10,406 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'sole_tenancy']
+2023-03-23 12:56:10,410 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_https_proxies']
+2023-03-23 12:56:10,416 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'resource_policies']
+2023-03-23 12:56:10,421 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2023-03-23 12:56:10,426 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'commitments']
+2023-03-23 12:56:10,430 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'http_health_checks']
+2023-03-23 12:56:10,434 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'shared_vpc']
+2023-03-23 12:56:10,443 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'target_vpn_gateways']
+2023-03-23 12:56:10,447 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'forwarding_rules']
+2023-03-23 12:56:10,457 DEBUG    root            Loaded Command Group: ['gcloud', 'help']
+2023-03-23 12:56:10,468 INFO     ___FILE_ONLY___ [m[1mNAME[m
+    gcloud compute - create and manipulate Compute Engine resources
+
+[m[1mSYNOPSIS[m
+    [1mgcloud compute[m [4mGROUP[m | [4mCOMMAND[m [[4mGCLOUD_WIDE_FLAG ...[m]
+
+[m[1mDESCRIPTION[m
+    The gcloud compute command group lets you create, configure, and manipulate
+    Compute Engine virtual machine (VM) instances.
+
+    With Compute Engine, you can create and run VMs on Google's infrastructure.
+    Compute Engine offers scale, performance, and value that lets you launch
+    large compute clusters on Google's infrastructure.
+
+    For more information about Compute Engine, see the Compute Engine overview
+    (https://cloud.google.com/compute/) and the Compute Engine user
+    documentation (https://cloud.google.com/compute/docs/).
+
+[m[1mGCLOUD WIDE FLAGS[m
+    These flags are available to all commands: --help.
+
+    Run [1m$ gcloud help[m for details.
+
+[m[1mGROUPS[m
+    [1m[1;4mGROUP[1m[m is one of the following:
+
+     [1maccelerator-types[m
+        Read Compute Engine accelerator types.
+
+     [1maddresses[m
+        Read and manipulate Compute Engine addresses.
+
+     [1mbackend-buckets[m
+        Read and manipulate backend buckets.
+
+     [1mbackend-services[m
+        List, create, and delete backend services.
+
+     [1mcommitments[m
+        Manage Compute Engine commitments.
+
+     [1mdiagnose[m
+        Debugging tools for Compute Engine virtual machine instances.
+
+     [1mdisk-types[m
+        Read Compute Engine virtual disk types.
+
+     [1mdisks[m
+        Read and manipulate Compute Engine disks.
+
+     [1mexternal-vpn-gateways[m
+        List, create, delete and update External VPN Gateways.
+
+     [1mfirewall-policies[m
+        Manage Compute Engine organization firewall policies.
+
+     [1mfirewall-rules[m
+        List, create, update, and delete Compute Engine firewall rules.
+
+     [1mforwarding-rules[m
+        Read and manipulate traffic forwarding rules to network load balancers.
+
+     [1mhealth-checks[m
+        Read and manipulate health checks for load balanced instances.
+
+     [1mhttp-health-checks[m
+        Read and manipulate HTTP health checks for load balanced instances.
+
+     [1mhttps-health-checks[m
+        Read and manipulate HTTPS health checks for load balanced instances.
+
+     [1mimages[m
+        List, create, and delete Compute Engine images.
+
+     [1minstance-groups[m
+        Read and manipulate Compute Engine instance groups.
+
+     [1minstance-templates[m
+        Read and manipulate Compute Engine instances templates.
+
+     [1minstances[m
+        Read and manipulate Compute Engine virtual machine instances.
+
+     [1minterconnects[m
+        Read and manipulate Compute Engine interconnects.
+
+     [1mmachine-images[m
+        Read and manage Compute Engine machine image resources.
+
+     [1mmachine-types[m
+        Read Compute Engine virtual machine types.
+
+     [1mnetwork-attachments[m
+        Manage Compute Engine network attachment resources.
+
+     [1mnetwork-edge-security-services[m
+        Read and manipulate network edge security services.
+
+     [1mnetwork-endpoint-groups[m
+        Read and manipulate Compute Engine network endpoint groups.
+
+     [1mnetwork-firewall-policies[m
+        Manage Compute Engine network firewall policies.
+
+     [1mnetworks[m
+        List, create, and delete Compute Engine networks.
+
+     [1moperations[m
+        Read and manipulate Compute Engine operations.
+
+     [1mos-config[m
+        Manage OS Config tasks for Compute Engine VM instances.
+
+     [1mos-login[m
+        Create and manipulate Compute Engine OS Login resources.
+
+     [1mpacket-mirrorings[m
+        Manage Compute Engine packet mirroring resources.
+
+     [1mproject-info[m
+        Read and manipulate project-level data like quotas and metadata.
+
+     [1mpublic-advertised-prefixes[m
+        Manage public advertised prefix resources.
+
+     [1mpublic-delegated-prefixes[m
+        Manage public delegated prefix resources.
+
+     [1mregions[m
+        List Compute Engine regions.
+
+     [1mreservations[m
+        Manage Compute Engine reservations.
+
+     [1mresource-policies[m
+        Manage Compute Engine Resource Policies.
+
+     [1mrouters[m
+        List, create, and delete Compute Engine routers.
+
+     [1mroutes[m
+        Read and manipulate routes.
+
+     [1msecurity-policies[m
+        Read and manipulate Cloud Armor security policies.
+
+     [1mservice-attachments[m
+        Manage Compute Engine service attachment resources.
+
+     [1mshared-vpc[m
+        Configure shared VPC.
+
+     [1msnapshots[m
+        List, describe, and delete Compute Engine snapshots.
+
+     [1msole-tenancy[m
+        Read and manage Compute Engine sole-tenancy resources.
+
+     [1mssl-certificates[m
+        List, create, and delete Compute Engine SSL certificate resources.
+
+     [1mssl-policies[m
+        List, create, delete and update Compute Engine SSL policies.
+
+     [1mtarget-grpc-proxies[m
+        Manage Compute Engine target gRPC proxy resources.
+
+     [1mtarget-http-proxies[m
+        List, create, and delete target HTTP proxies.
+
+     [1mtarget-https-proxies[m
+        List, create, and delete target HTTPS proxies.
+
+     [1mtarget-instances[m
+        Read and manipulate Compute Engine virtual target instances.
+
+     [1mtarget-pools[m
+        Control Compute Engine target pools for network load balancing.
+
+     [1mtarget-ssl-proxies[m
+        List, create, and delete target SSL proxies.
+
+     [1mtarget-tcp-proxies[m
+        List, create, and delete target TCP proxies.
+
+     [1mtarget-vpn-gateways[m
+        Read and manipulate classic VPN gateways.
+
+     [1mtpus[m
+        List, create, and delete Cloud TPUs.
+
+     [1murl-maps[m
+        List, create, and delete URL maps.
+
+     [1mvpn-gateways[m
+        read and manipulate Highly Available VPN Gateways.
+
+     [1mvpn-tunnels[m
+        Read and manipulate Compute Engine VPN tunnels.
+
+     [1mzones[m
+        List Compute Engine zones.
+
+[m[1mCOMMANDS[m
+    [1m[1;4mCOMMAND[1m[m is one of the following:
+
+     [1mconfig-ssh[m
+        Populate SSH config files with Host entries from each instance.
+
+     [1mconnect-to-serial-port[m
+        Connect to the serial port of an instance.
+
+     [1mcopy-files[m
+        [1m(DEPRECATED)[m Copy files to and from Google Compute Engine virtual
+        machines via scp.
+
+     [1mreset-windows-password[m
+        Reset and return a password for a Windows machine instance.
+
+     [1mscp[m
+        Copy files to and from Google Compute Engine virtual machines via scp.
+
+     [1msign-url[m
+        Sign specified URL for use with Cloud CDN Signed URLs.
+
+     [1mssh[m
+        SSH into a virtual machine instance.
+
+     [1mstart-iap-tunnel[m
+        Starts an IAP TCP forwarding tunnel.
+[m

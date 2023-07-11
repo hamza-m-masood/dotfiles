@@ -1,0 +1,56 @@
+2023-03-23 12:54:47,166 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-03-23 12:54:47,167 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2023-03-23 12:54:47,192 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-03-23 12:54:47,210 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-03-23 12:54:47,325 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-03-23 12:54:47,346 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [NAME: "gke-px"]
+2023-03-23 12:54:47,354 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2023-03-23 12:54:47,386 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-23 12:54:47,564 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/europe-west4-b/clusters/gke-px?alt=json HTTP/1.1" 404 None
+2023-03-23 12:54:47,573 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-23 12:54:48,079 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/pwx-cnbu-cx-support/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2023-03-23 12:54:48,091 DEBUG    root            (gcloud.container.clusters.get-credentials) ResponseError: code=404, message=Not found: projects/pwx-cnbu-cx-support/zones/europe-west4-b/clusters/gke-px.
+Could not find [gke-px] in [europe-west4-b].
+Did you mean [gke-px] in [europe-west1-b]?
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1414, in GetCluster
+    return self.client.projects_locations_clusters.Get(
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/container/v1/container_v1_client.py", line 547, in Get
+    return self._RunMethod(
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpNotFoundError: HttpError accessing <https://container.googleapis.com/v1/projects/pwx-cnbu-cx-support/locations/europe-west4-b/clusters/gke-px?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 23 Mar 2023 12:54:47 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 404}>, content <{
+  "error": {
+    "code": 404,
+    "message": "Not found: projects/pwx-cnbu-cx-support/zones/europe-west4-b/clusters/gke-px.",
+    "status": "NOT_FOUND"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/container/clusters/get_credentials.py", line 115, in Run
+    cluster, cluster_ref = _BaseRun(args, self.context)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/container/clusters/get_credentials.py", line 41, in _BaseRun
+    cluster = adapter.GetCluster(cluster_ref)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1421, in GetCluster
+    self.CheckClusterOtherZones(cluster_ref, api_error)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1485, in CheckClusterOtherZones
+    raise util.Error(
+googlecloudsdk.api_lib.container.util.Error: ResponseError: code=404, message=Not found: projects/pwx-cnbu-cx-support/zones/europe-west4-b/clusters/gke-px.
+Could not find [gke-px] in [europe-west4-b].
+Did you mean [gke-px] in [europe-west1-b]?
+2023-03-23 12:54:48,111 ERROR    root            (gcloud.container.clusters.get-credentials) ResponseError: code=404, message=Not found: projects/pwx-cnbu-cx-support/zones/europe-west4-b/clusters/gke-px.
+Could not find [gke-px] in [europe-west4-b].
+Did you mean [gke-px] in [europe-west1-b]?

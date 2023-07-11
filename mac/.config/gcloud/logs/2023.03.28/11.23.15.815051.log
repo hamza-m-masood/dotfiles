@@ -1,0 +1,47 @@
+2023-03-28 11:23:15,828 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2023-03-28 11:23:15,846 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2023-03-28 11:23:15,848 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--zone: "europe-west1-b", [USER@]INSTANCE: "gke-gke-px-pool3-cd785227-4dwx"]
+2023-03-28 11:23:15,942 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-03-28 11:23:15,957 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-03-28 11:23:17,186 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-03-28 11:23:17,318 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-28 11:23:18,607 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-28 11:23:18,899 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-28 11:23:20,453 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-28 11:23:20,463 DEBUG    root            OS Login Enabled: False
+2FA Enabled: False
+Security Keys Enabled: False
+Username: hmasood
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2023-03-28 11:23:20,464 DEBUG    root            Current SSH keys in project: ['hmasood:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC3U3BFyYdwLGySJyQx3woz4la/VOgVAZLFtBkpzPayvrX/6vsNqi2Ya8i1p58jL4YGfUkKlVFw0kVDMcbdeCOke8761D1uzG0lmc752gfSEpZtmhGe/syOVAgteAiCOS+xHfXCGUVa174vcS98Lv/+7fIMejPwj1w78w0//FXQvHKTUPJJcoys+oAZ0bdrZmIHBtPgYFpD6mVid/l1Je2gnjGtxizhGN0Q4r2IdhtH7C0B7c5yJhlmVsiArsPU+Wt9H6t6VMpQwya27vcJ51q80/UKpJsQbh44VlYxBlGQh52EYV4WmJlGqk/Lr24OOjoerr3BZWGQ9z0h+XRJI/9bcM0f2Fdt6iUrdjPKheoVWu0cgiVeuBcSCpg/uzx2myTlGI1KnbkdtEbjcCuEtcZbRUV5D5I+gw0KrfKL8TKuwEbvE9eSHSSvuSwBFOdwPUQiYN0kT6OR7g3XpKa+7J9oP0CYPonluWfBm1aFSNOVeEmO3CZ5OaXG/mccBWUeCvM= hmasood@hmasood--MacBookPro18']
+2023-03-28 11:23:20,464 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/hmasood/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.9091921688264736712 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/Users/hmasood/.ssh/google_compute_known_hosts hmasood@34.79.232.208].
+2023-03-28 11:23:20,465 DEBUG    root            Executing command: ['/usr/bin/ssh', '-t', '-i', '/Users/hmasood/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.9091921688264736712', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=yes', '-o', 'UserKnownHostsFile=/Users/hmasood/.ssh/google_compute_known_hosts', 'hmasood@34.79.232.208']
+2023-03-28 13:38:15,154 INFO     ___FILE_ONLY___ 
+Recommendation: To check for possible causes of SSH connectivity issues and get
+recommendations, rerun the ssh command with the --troubleshoot option.
+
+gcloud compute ssh gke-gke-px-pool3-cd785227-4dwx --project=pwx-cnbu-cx-support --zone=europe-west1-b --troubleshoot
+
+Or, to investigate an IAP tunneling issue:
+
+gcloud compute ssh gke-gke-px-pool3-cd785227-4dwx --project=pwx-cnbu-cx-support --zone=europe-west1-b --troubleshoot --tunnel-through-iap
+
+
+2023-03-28 13:38:15,155 DEBUG    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/ssh.py", line 431, in Run
+    raise e
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/compute/ssh.py", line 424, in Run
+    return_code = cmd.Run(
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/ssh/ssh.py", line 1557, in Run
+    raise CommandError(args[0], return_code=status)
+googlecloudsdk.command_lib.util.ssh.ssh.CommandError: [/usr/bin/ssh] exited with return code [255].
+2023-03-28 13:38:15,170 ERROR    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

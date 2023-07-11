@@ -1,0 +1,6 @@
+2023-03-22 16:19:08,095 DEBUG    root            Loaded Command Group: ['gcloud', 'info']
+2023-03-22 16:19:08,096 DEBUG    root            Running [gcloud.info] with arguments: [--format: "value(config.account)"]
+2023-03-22 16:19:08,126 DEBUG    root            Chosen display Format:value(config.account)
+2023-03-22 16:19:08,127 INFO     root            Display format: "value(config.account)"
+2023-03-22 16:19:08,128 INFO     ___FILE_ONLY___ hmasood@purestorage.com
+

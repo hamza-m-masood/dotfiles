@@ -1,0 +1,43 @@
+2023-03-24 15:19:11,917 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'node_pools']
+2023-03-24 15:19:11,927 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'node-pools', 'create']
+2023-03-24 15:19:11,982 DEBUG    root            Running [gcloud.container.node-pools.create] with arguments: [--cluster: "gke-px", --image-type: "ubuntu-containerd", --num-nodes: "3", --scopes: "['https://www.googleapis.com/auth/compute', 'https://www.googleapis.com/auth/devstorage.read_only', 'https://www.googleapis.com/auth/logging.write', 'https://www.googleapis.com/auth/monitoring', 'https://www.googleapis.com/auth/servicecontrol', 'https://www.googleapis.com/auth/service.management.readonly', 'https://www.googleapis.com/auth/trace.append']", --zone: "europe-west1-b", NAME: "pool3"]
+2023-03-24 15:19:11,982 INFO     ___FILE_ONLY___ Note: Modifications on the boot disks of node VMs do not persist across node recreations. Nodes are recreated during manual-upgrade, auto-upgrade, auto-repair, and auto-scaling. To preserve modifications across node recreation, use a DaemonSet.
+
+2023-03-24 15:19:11,982 INFO     ___FILE_ONLY___ Default change: During creation of nodepools or autoscaling configuration changes for cluster versions greater than 1.24.1-gke.800 a default location policy is applied. For Spot and PVM it defaults to ANY, and for all other VM kinds a BALANCED policy is used. To change the default values use the `--location-policy` flag.
+
+2023-03-24 15:19:11,999 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-24 15:19:12,164 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/clusters/gke-px/nodePools?alt=json HTTP/1.1" 400 None
+2023-03-24 15:19:12,167 DEBUG    root            (gcloud.container.node-pools.create) ResponseError: code=400, message=Unexpected image_type: UBUNTU-CONTAINERD.
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/container/node_pools/create.py", line 285, in Run
+    operation_ref = adapter.CreateNodePool(pool_ref, options)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 3696, in CreateNodePool
+    operation = self.client.projects_locations_clusters_nodePools.Create(req)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/container/v1/container_v1_client.py", line 149, in Create
+    return self._RunMethod(
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://container.googleapis.com/v1/projects/pwx-cnbu-cx-support/locations/europe-west1-b/clusters/gke-px/nodePools?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Fri, 24 Mar 2023 15:19:12 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Unexpected image_type: UBUNTU-CONTAINERD.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/Users/hmasood/Downloads/google-cloud-sdk/lib/surface/container/node_pools/create.py", line 297, in Run
+    raise exceptions.HttpException(error, util.HTTP_ERROR_FORMAT)
+googlecloudsdk.calliope.exceptions.HttpException: ResponseError: code=400, message=Unexpected image_type: UBUNTU-CONTAINERD.
+2023-03-24 15:19:12,196 ERROR    root            (gcloud.container.node-pools.create) ResponseError: code=400, message=Unexpected image_type: UBUNTU-CONTAINERD.
