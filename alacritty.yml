@@ -1,0 +1,9 @@
+font:
+  size: 18.0
+  normal:
+    family: Iosevka Nerd Font
+window:
+  decorations: buttonless
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left, mods: Alt, chars: "\x1BB" }
